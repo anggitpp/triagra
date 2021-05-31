@@ -1,0 +1,113 @@
+.cmenu {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-family: muller;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login {
+    border-bottom: 2px solid #fff;
+    color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-right: 60px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.6s;
+}
+
+.login:hover {
+    text-decoration: none;
+    color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-right: 60px;
+    background: #fff;
+    padding: 5px;
+    color: green;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*@font-face {*/
+/*    font-family: 'Yogi';*/
+/*    src: url('../font/MullerNarrowDemo-Light.otf');*/
+/*}*/
+
+body, p, li, a {
+    font-family: 'Arial';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul > li > a {
+    padding: 5px;
+    padding-left: 10px;
+    transition: 0.6s;
+    font-size: 18;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul > li > a:hover {
+    background: #fff;
+    padding: 5px;
+    color: green;
+    text-decoration: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fixed-nav #fixedmenu {
+    background: #6ba477;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.fixed-nav #fixedmenuindex {
+    background: #6ba477;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.fixed-nav .topnav li.home {
+    display: inline-block;
+}
+
+.hilang #fixedmenu {
+    position: absolute;
+    top: -100em;
+}

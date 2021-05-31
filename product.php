@@ -51,21 +51,30 @@ $r = mysqli_fetch_assoc($sql);
 
 <div style="height: 2132px; width: 1366px; background-image:url(images/temp/product.jpg); background-repeat:no-repeat; background-size: 100% 100%; padding: 50px; padding-right: 0; padding-top: 120px;">
 </div>
+<br/>
+<br/>
 
-<!--<table>-->
-<!--    <tr>-->
-<!--        <th>No. </th>-->
-<!--        <th>Item</th>-->
-<!--        <th>Description</th>-->
-<!--        <th></th>-->
-<!--    </tr>-->
-<!--    <tr>-->
-<!--        <td>1</td>-->
-<!--        <td>Engine Oil</td>-->
-<!--        <td>Engine Oil is our original product who can make your engine on with a second</td>-->
-<!--        <td></td>-->
-<!--    </tr>-->
-<!--</table>-->
+<div style="padding-left: 20px; padding-right: 20px;">
+    <h4><b>Document Lists</b></h4>
+    <table class="table" style="width: 100%">
+        <tr>
+            <th width="50%">Name</th>
+            <th width="5%">Download</th>
+        </tr>
+        <?php
+        $sql_ = mysqli_query($con, "SELECT * from tr_product");
+        while ($r_ = mysqli_fetch_assoc($sql_)){
+            $link = "tradmin/files/".$r_['filename'];
+            ?>
+            <tr>
+                <td><?= $r_['name'] ?></td>
+                <td align="left"><a href="<?= $link ?>" download><i class="fa fa-download fa-2x" style="color: green"></i></a></td>
+            </tr>
+        <?php
+        }
+        ?>
+    </table>
+</div>
 
 
 <div style="background-image:url(images/footer.png); width:1366px; height:231px; padding-top:20px; margin-top: 0px; padding-left: 70px;">

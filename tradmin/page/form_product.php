@@ -12,13 +12,11 @@ if(isset($_POST['submit'])){
         $_FILES['filename']['tmp_name'], $fFile."/".$_FILES['filename']['name']
     );
     if(!empty($_GET['id'])){
-//        echo "edit";
+        $filename = empty($filename) ? $r['filename'] : $filename;
         mysqli_query($con, "UPDATE tr_product SET name = '$_POST[name]', description = '$_POST[description]', filename = '$filename' WHERE id = '".$_GET['id']."'");
     }else{
-//        echo "insert";
         mysqli_query($con, "INSERT tr_product SET name = '$_POST[name]', description = '$_POST[description]', filename = '$filename'");
     }
-//    die();
 
     echo "<script>window.location='dashboard.php?c=product';</script>";
 }

@@ -24,7 +24,7 @@ $r = mysqli_fetch_assoc($sql);
             <img src="images/WEB_TRIAGRA_1366x768-rev_03.png" style="margin: 80px; margin-top: 50px;">
         </div>
         <div style="float:right; width: 60%; text-align: right; padding-top: 20px;  font-size: 14px;">
-            <ul style="margin-right: 150px; margin-top: 50px;">
+            <ul style="margin-right: 80px; margin-top: 50px;">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="profile.php">Profile</a></li>
                 <li><a href="product.php">Product</a></li>

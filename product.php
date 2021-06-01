@@ -24,7 +24,7 @@ $r = mysqli_fetch_assoc($sql);
         <img src="images/WEB_TRIAGRA_1366x768-rev_03.png" style="margin: 80px; margin-top: 50px;">
     </div>
     <div style="float:right; width: 60%; text-align: right; padding-top: 20px;  font-size: 14px;">
-        <ul style="margin-right: 150px; margin-top: 50px;">
+        <ul style="margin-right: 80px; margin-top: 50px;">
             <li><a href="index.php">Home</a></li>
             <li><a href="profile.php">Profile</a></li>
             <li><a href="#">Product</a></li>
@@ -55,10 +55,11 @@ $r = mysqli_fetch_assoc($sql);
 <br/>
 
 <div style="padding-left: 20px; padding-right: 20px;">
-    <h4><b>Document Lists</b></h4>
+    <h4><b>Product Data Sheet</b></h4>
     <table class="table" style="width: 100%">
         <tr>
-            <th width="50%">Name</th>
+            <th width="30%">Name</th>
+            <th width="60%">Description</th>
             <th width="5%">Download</th>
         </tr>
         <?php
@@ -68,7 +69,8 @@ $r = mysqli_fetch_assoc($sql);
             ?>
             <tr>
                 <td><?= $r_['name'] ?></td>
-                <td align="left"><a href="<?= $link ?>" download><i class="fa fa-download fa-2x" style="color: green"></i></a></td>
+                <td><?= $r_['description'] ?></td>
+                <td align="center"><a href="<?= $link ?>" download><i class="fa fa-download fa-2x" style="color: green"></i></a></td>
             </tr>
         <?php
         }

@@ -60,7 +60,7 @@ $r = mysqli_fetch_assoc($sql);
         <tr>
             <th width="30%">Name</th>
             <th width="60%">Description</th>
-            <th width="5%">Download</th>
+            <th width="10%">Download</th>
         </tr>
         <?php
         $sql_ = mysqli_query($con, "SELECT * from tr_product");
@@ -70,7 +70,7 @@ $r = mysqli_fetch_assoc($sql);
             <tr>
                 <td><?= $r_['name'] ?></td>
                 <td><?= $r_['description'] ?></td>
-                <td align="center"><a href="<?= $link ?>" download><i class="fa fa-download fa-2x" style="color: green"></i></a></td>
+                <td align="center"><a href="<?= $link ?>" download><i class="fa fa-download fa-2x" style="color: green;margin-right: 30px;""></i></a></td>
             </tr>
         <?php
         }

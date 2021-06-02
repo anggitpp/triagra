@@ -48,7 +48,7 @@ $r = mysqli_fetch_assoc($sql);
 <!--		</div>-->
 <div id="project"/>
 <div id="partner"/>
-<div style="background-image:url(images/footer.png); position:absolute; left:0px; top:764px;  width:1366px; height:231px;">
+<div style="background-image:url(images/footer.png); position:absolute; left:0px; top:765px;  width:1366px; height:231px;">
     <div style="float:left; width:40%; padding: 40px; color:#fff; padding-top: 50px; padding-left: 70px; font-weight: bolder">
         <h4><i class="fa fa-map-marker"></i>&nbsp;&nbsp; <?= $r['alamat'] ?></h4>
         <i class="fa fa-inbox"></i>&nbsp;&nbsp; Email : <?= $r['email'] ?><br>
@@ -114,10 +114,10 @@ $r = mysqli_fetch_assoc($sql);
     }
 
     #partner {
-        background-image: url(images/WEB_TRIAGRA_1366x768-rev_27.png);
+        background-image: url(images/temp/partner.jpg);
         position: absolute;
         left: 0px;
-        top: 760px;
+        top: 763px;
         width: 1366px;
         height: 769px;
     }

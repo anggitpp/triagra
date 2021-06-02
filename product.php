@@ -10,11 +10,12 @@ $r = mysqli_fetch_assoc($sql);
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <link rel="shortcut icon" href="favicon.png">
 </head>
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <style type="text/css">
-    label{
+    label {
         font-weight: bolder;
     }
 </style>
@@ -49,7 +50,7 @@ $r = mysqli_fetch_assoc($sql);
     </div>
 </div>
 
-<div style="height: 2132px; width: 1366px; background-image:url(images/temp/product.jpg); background-repeat:no-repeat; background-size: 100% 100%; padding: 50px; padding-right: 0; padding-top: 120px;">
+<div id="product">
 </div>
 <br/>
 <br/>
@@ -58,21 +59,23 @@ $r = mysqli_fetch_assoc($sql);
     <h4><b>Product Data Sheet</b></h4>
     <table class="table" style="width: 100%">
         <tr>
-            <th width="30%">Name</th>
-            <th width="60%">Description</th>
+            <th width="45%">Name</th>
+            <th width="45%">Description</th>
             <th width="10%">Download</th>
         </tr>
         <?php
         $sql_ = mysqli_query($con, "SELECT * from tr_product");
-        while ($r_ = mysqli_fetch_assoc($sql_)){
-            $link = "tradmin/files/".$r_['filename'];
+        while ($r_ = mysqli_fetch_assoc($sql_)) {
+            $link = "tradmin/files/" . $r_['filename'];
             ?>
             <tr>
                 <td><?= $r_['name'] ?></td>
                 <td><?= $r_['description'] ?></td>
-                <td align="center"><a href="<?= $link ?>" download><i class="fa fa-download fa-2x" style="color: green;margin-right: 30px;""></i></a></td>
+                <td align="center"><a href="<?= $link ?>" download><i class="fa fa-download fa-2x"
+                                                                      style="color: green;margin-right: 30px;""></i></a>
+                </td>
             </tr>
-        <?php
+            <?php
         }
         ?>
     </table>
@@ -88,10 +91,24 @@ $r = mysqli_fetch_assoc($sql);
     </div>
     <div style="float:right; width:45%; color:#fff;" align="right">
         <img src="images/WEB_TRIAGRA_1366x768-rev_03.png" style="margin: 80px; margin-top: 40px; margin-bottom: 0px;">
-        <p style="margin: 80px; margin-top: 50px; font-size: 14px;">Copyright &copy; <?= $r['nama_perusahaan'] ?> <?= date("Y") ?></p>
+        <p style="margin: 80px; margin-top: 50px; font-size: 14px;">Copyright
+            &copy; <?= $r['nama_perusahaan'] ?> <?= date("Y") ?></p>
     </div>
 </div>
 
 <script src="scripts/custom.js"></script>
 </body>
 </html>
+<style>
+    #product {
+        margin-top: 50px;
+        height: 2132px;
+        width: 1366px;
+        background-image: url(images/temp/product.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 50px;
+        padding-right: 0;
+        padding-top: 120px;
+    }
+</style>

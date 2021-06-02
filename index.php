@@ -96,7 +96,7 @@ $r = mysqli_fetch_assoc($sql);
     }
 
     #image1 {
-        background-image: url(images/WEB_TRIAGRA_1366x768-rev_23.png);
+        background-image: url(images/temp/image1.jpg);
         position: absolute;
         left: 0px;
         top: 936px;

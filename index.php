@@ -91,23 +91,23 @@ $r = mysqli_fetch_assoc($sql);
         left: 0px;
         top: 788px;
         width: 1366px;
-        height: 768px;
+        height: 748px;
     }
 
     #flow {
-        background-image: url(images/WEB_TRIAGRA_1366x768-rev_25.png);
+        background-image: url(images/temp/flow.jpg);
         position: absolute;
         left: 0px;
-        top: 769px;
+        top: 672px;
         width: 1366px;
-        height: 768px;
+        height: 731px;
     }
 
     #image1 {
         background-image: url(images/temp/image1.jpg);
         position: absolute;
         left: 0px;
-        top: 936px;
+        top: 986px;
         width: 1366px;
         height: 767px;
     }

@@ -44,8 +44,7 @@ $r = mysqli_fetch_assoc($sql);
 <div id="about"/>
 <div id="image1"/>
 <div id="values"/>
-<!--		<div style="background-image:url(images/WEB_TRIAGRA_1366x768-rev_25.png); position:absolute; left:0px; top:3839px; width:1366px; height:768px;" title="">-->
-<!--		</div>-->
+<div id="flow"/>
 <div id="project"/>
 <div id="partner"/>
 <div style="background-image:url(images/footer.png); position:absolute; left:0px; top:765px;  width:1366px; height:231px;">
@@ -91,6 +90,15 @@ $r = mysqli_fetch_assoc($sql);
         position: absolute;
         left: 0px;
         top: 788px;
+        width: 1366px;
+        height: 768px;
+    }
+
+    #flow {
+        background-image: url(images/WEB_TRIAGRA_1366x768-rev_25.png);
+        position: absolute;
+        left: 0px;
+        top: 769px;
         width: 1366px;
         height: 768px;
     }
